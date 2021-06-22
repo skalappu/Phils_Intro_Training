@@ -18,7 +18,7 @@ Here I am cleaning up the data
 
 ```{r}
 ggplot(airline) +
- aes(x = YEAR, y = W) +
+ aes(x = YEAR, y = R) +
  geom_boxplot(fill = "#0c4c8a") +
  theme_minimal()
 ```
