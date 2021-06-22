@@ -1,0 +1,25 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Import Proc
+
+```{r}
+library(haven)
+library(tidyverse)
+airline <- read_sas("http://www.principlesofeconometrics.com/sas/airline.sas7bdat", 
+    NULL)
+airline
+```
+
+Data Wrangle
+Here I am cleaning up the data
+
+```{r}
+ggplot(airline) +
+ aes(x = YEAR, y = W) +
+ geom_boxplot(fill = "#0c4c8a") +
+ theme_minimal()
+```
+
